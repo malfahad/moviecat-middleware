@@ -84,6 +84,15 @@ DATABASES = {
 database_url = os.environ["DATABASE_URL"]
 DATABASES['default'] = dj_database_url.parse(database_url, conn_max_age=600)
 
+#S3 configuration
+S3_BUCKET_NAME = 'moviecat'
+
+
+#JSON_RPC configuration
+JSON_RPC_SERVER_URL = ''
+
+
+
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
